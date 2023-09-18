@@ -4,7 +4,15 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className="navbar">
+      <img src="" alt="" />
+      <div className="desktopMenu">
+
+      </div>
+      <button className="desktopMenButton">
+        <img src="" alt="" className="desktopMenuImg" /> Contact me
+      </button>
+    </nav>
   )
 }
 
