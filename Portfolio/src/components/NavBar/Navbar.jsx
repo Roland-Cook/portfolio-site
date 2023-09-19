@@ -8,7 +8,6 @@ import contact from "../../assets/contact.png"
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <img src={logo} alt="personal logo" className="logo" />
       <div className="desktopMenu">
         <Link className="desktopMenuListItem">Home</Link>
         <Link className="desktopMenuListItem">About</Link>
