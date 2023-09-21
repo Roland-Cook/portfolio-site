@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section id="works">
         <h2 className="worksTitle">My Portfolio</h2>
-        <span className="worksDesc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quo voluptatibus fuga doloribus velit neque esse repellendus veritatis. Culpa inventore rem fugit labore sit praesentium atque rerum. Debitis, blanditiis possimus!</span>
+        <span className="worksDesc">Welcome to my portfolio – a collection of my creative work. Here, you'll find a variety of projects that showcase my skills and dedication. Feel free to explore and get in touch if you have questions or want to discuss potential collaborations. <br />Let's turn your ideas into reality!</span>
         
 
         <div className="worksImgs">
@@ -27,7 +27,7 @@ const Projects = () => {
             <a href="https://gitlab.com/Cook.r/scrumptious" target='__blank'><img src={two} alt="" className="worksImg" /></a>
         </div>
 
-        <button className="workBtn">See More</button>
+        <a href="https://gitlab.com/Cook.r" target='__blank' ><button className="workBtn">See More</button></a>
         
     </section>
   )

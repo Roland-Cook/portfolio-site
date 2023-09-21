@@ -4,6 +4,9 @@ import logo from "../../assets/logo.png"
 import { Link } from "react-router-dom";
 import contact from "../../assets/contact.png"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComment } from '@fortawesome/free-solid-svg-icons'
+
 
 const Navbar = () => {
   return (
@@ -14,8 +17,10 @@ const Navbar = () => {
         <Link className="desktopMenuListItem">Portfolio</Link>
         <Link className="desktopMenuListItem">Resume</Link>
       </div>
+
       <button className="desktopMenuBtn">
-        <img src={contact} alt="" className="desktopMenuImg" /> Contact Me
+        
+      <FontAwesomeIcon icon={faComment} className="desktopMenuImg"  />  Contact Me
       </button>
     </nav>
   )

@@ -1,8 +1,9 @@
 import React from 'react'
 import "./intro.scss"
 import { Link } from "react-router-dom";
-import btnImg from "../../assets/hireme.png"
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
 
 
 
@@ -16,10 +17,9 @@ const Intro = () => {
             
             <p className="introPara">I am a skilled and passionate Full Stack Developer with experience in creating <br /> appealing and user-friendly websites.</p>
             
-            <Link to="/" className='hireMe'><button className="btn"><img src={btnImg} alt="" className='btnImg' /> Hire me</button></Link>
+            <Link to="/" className='hireMe'><button className="btn"><FontAwesomeIcon icon={faBriefcase} className='btnImg'  /> Hire me</button></Link>
         </div>
     </section>
   )
 }
-
 export default Intro

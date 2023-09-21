@@ -37,7 +37,7 @@ $color-purple: #8800ff;
 
 .desktopMenuBtn {
     background: $color-purple;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     border: none;
     display: flex;
@@ -49,8 +49,8 @@ $color-purple: #8800ff;
 
 .desktopMenuImg{
     object-fit: cover;
-    height: 1rem;
-    width: 1rem;
+    height: 1.5rem;
+    width: 1.5rem;
     margin: 1rem;
     background-color: $color-purple;
 }

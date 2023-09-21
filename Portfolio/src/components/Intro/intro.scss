@@ -5,6 +5,7 @@ $color-purple: #8800ff;
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
+    margin-top: -10rem;
     overflow: hidden;
     position: relative;
 }
@@ -50,12 +51,15 @@ $color-purple: #8800ff;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+    color: white;
+    scale: 1.1;
 }
 
 .btnImg {
     object-fit: cover;
     margin: 0 .25rem;
     height: 1rem;
+    color: white;
 }
 
 /*
