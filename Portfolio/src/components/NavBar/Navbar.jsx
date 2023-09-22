@@ -1,8 +1,9 @@
-import useRef from 'react'
+import useRef, { useState } from 'react'
 import "./Navbar.scss"
 import logo from "../../assets/logo.png"
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import contact from "../../assets/contact.png"
+import menu from "../../assets/menu.png"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faComment } from '@fortawesome/free-solid-svg-icons'
@@ -11,21 +12,29 @@ import { useInView } from "react-intersection-observer"
 
 const Navbar = () => {
   const { ref: myRef, inView: Visible } = useInView()
-  console.log(Visible)
+  const [showMenu, setShowMenu] = useState(false)
 
   return (
     <nav className={` navbar ${Visible ? "navShow" : "navHidden"} `} ref={myRef}>
       <div className="desktopMenu">
-        <Link className="desktopMenuListItem">Home</Link>
-        <Link className="desktopMenuListItem">About</Link>
-        <Link className="desktopMenuListItem">Portfolio</Link>
+        <Link activeClass ="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
+        <Link activeClass ="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
+        <Link activeClass ="active" to="skills" spy={true} smooth={true}  offset={650} duration={500} className="desktopMenuListItem">Portfolio</Link>
         <Link className="desktopMenuListItem">Resume</Link>
       </div>
 
-      <button className="desktopMenuBtn">
-        
-      {/* <FontAwesomeIcon icon={faComment} className="desktopMenuImg"  />  Contact Me */}
-      </button>
+    <img src={menu} alt="Menu" className='mobMenu' onClick={()=> setShowMenu(!showMenu)}/>
+      <div className="navMenu" style={{display: showMenu? "flex":"none"}}>
+        <Link activeClass ="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=> setShowMenu(false)}>Home</Link>
+        <Link activeClass ="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=> setShowMenu(false)}>About</Link>
+        <Link activeClass ="active" to="skills" spy={true} smooth={true}  offset={650} duration={500} className="listItem" onClick={()=> setShowMenu(false)}>Portfolio</Link>
+        <Link className="listItem">Resume</Link>
+      </div>
+      
+
+
+
+
     </nav>
   )
 }

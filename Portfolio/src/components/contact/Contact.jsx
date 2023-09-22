@@ -6,12 +6,14 @@ import { useInView } from "react-intersection-observer"
 
 const Contact = () => {
     const { ref: myRef, inView: Visible } = useInView()
+	console.log(Visible)
+
 
   return (
 
-<div className={`container ${Visible ? "skillsShow" : "skillsHidden"} `} ref={myRef}>
+<div id='contact' className={`container ${Visible ? "footerShow" : "footerHidden"} `} ref={myRef}>
 
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
+	<svg id='svg' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
 			<g id="Image">
 					<g id="g14">
                     <g id="g16">

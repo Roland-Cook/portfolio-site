@@ -19,8 +19,7 @@ const Skills = () => {
   return (
     <section id='skills' ref={myRef} className={`${Visible ? "skillsShow" : "skillsHidden"} `} >
         <span className="skillTitle">What I do</span>
-            <span className="skillDesc"> I am a skilled and passionate Full Stack Developer with experience in creating
-appealing and user-friendly websites. </span>
+            <span className="skillDesc"> Full Stack Developer who enjoys creating user-friendly websites and applications. I specialize in both front-end and back-end development, with a strong focus on designing intuitive interfaces. </span>
         <div className="skillBars">
 
             <div className="skillbar">

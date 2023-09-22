@@ -1,7 +1,7 @@
 $color-purple: #8800ff;
 
 #works{
-    width: 100vw;
+    width: 70vw;
     max-width: 70rem;
     display: flex;
     flex-direction: column;
@@ -39,6 +39,7 @@ $color-purple: #8800ff;
   transform: scale(1.0);
   transition: transform 0.4s ease;
   border-radius: .5rem;
+  
 }
 
 .img-box {
@@ -52,7 +53,9 @@ $color-purple: #8800ff;
   position: relative;
   background-color: white;
   border-radius: .5rem;
-
+  box-shadow: 5px 7px 6px -3px rgba(136,0,255);
+  -webkit-box-shadow: 5px 7px 6px -3px rgba(136,0,255);
+  -moz-box-shadow: 5px 7px 6px -3px rgba(136,0,255);
 }
 
 .caption {
