@@ -1,13 +1,23 @@
+import { useRef, useEffect, useState} from 'react'
+import { useInView } from "react-intersection-observer"
+
 import React from 'react'
 import "./skill.scss"
 import UIDesign from "../../assets/ui-design.png"
 import WebDesign from "../../assets/website-design.png"
 import AppDesign from "../../assets/app-design.png"
 
-
 const Skills = () => {
+
+  const { ref: myRef, inView: Visible } = useInView()
+
+
+  console.log(Visible)
+
+
+
   return (
-    <section id='skills'>
+    <section id='skills' ref={myRef} className={`${Visible ? "skillsShow" : "skillsHidden"} `} >
         <span className="skillTitle">What I do</span>
             <span className="skillDesc"> I am a skilled and passionate Full Stack Developer with experience in creating
 appealing and user-friendly websites. </span>
@@ -44,5 +54,6 @@ appealing and user-friendly websites. </span>
     </section>
   )
 }
+
 
 export default Skills

@@ -9,11 +9,13 @@ $color-purple: #8800ff;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 3;
 }
+
+
 .desktopMenuListItem {
     margin: 1rem;
     cursor: pointer;
@@ -53,4 +55,16 @@ $color-purple: #8800ff;
     width: 1.5rem;
     margin: 1rem;
     background-color: $color-purple;
+}
+
+.navShow{
+    opacity: 1;
+    transition: all 1.5s;
+}
+
+.navHidden{
+    transition: all 1.5s;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-50%);
 }

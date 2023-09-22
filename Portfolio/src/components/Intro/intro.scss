@@ -62,8 +62,15 @@ $color-purple: #8800ff;
     color: white;
 }
 
-/*
-.hireMe{
-    width: 8%;
+.skillsHidden{
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateY(50%);
 }
-*/
+
+.skillsShow{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}

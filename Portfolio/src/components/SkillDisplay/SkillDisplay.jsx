@@ -1,6 +1,5 @@
-import React from 'react'
+import useRef from 'react'
 import "./skillDisplay.scss"
-
 import reactImg from "../../assets/reactjs.png"
 import JsImg from "../../assets/javascript.png"
 import pyImg from "../../assets/python.png"
@@ -9,6 +8,7 @@ import bs from "../../assets/bootstrap.png"
 import sass from "../../assets/sass.png"
 import docker from "../../assets/docker.png"
 import git from "../../assets/git.png"
+import { useInView } from "react-intersection-observer"
 
 
 
@@ -19,8 +19,11 @@ import git from "../../assets/git.png"
 
 
 const SkillDisplay = () => {
+
+	const { ref: myRef, inView: Visible } = useInView()
+
   return (
-<div className="slider">
+<div className={`slider ${Visible ? "skillsShow" : "skillsHidden"} `} ref={myRef}>
 	<div className="slide-track">
 		<div className="slide">
 			<img src={reactImg} height="100" width="100" alt="" />
