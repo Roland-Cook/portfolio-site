@@ -40,7 +40,7 @@ const Skills = () => {
             </div>
 
 
-            <div className="skillbar">
+            <div id='project-card' className="skillbar">
                 <img src={AppDesign} alt="" className="skillBarImg" />
                 <div className="skillBarText">
                     <h2>UI/UX Design</h2>

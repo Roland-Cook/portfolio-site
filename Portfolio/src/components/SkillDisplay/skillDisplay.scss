@@ -1,4 +1,5 @@
 
+$color-purple: #8800ff;
 
 @mixin white-gradient {
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
@@ -16,7 +17,7 @@ $animationSpeed: 40s;
 // Styling
 .slider {
 	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	box-shadow: 0 10px 20px -15px $color-purple;
 	height: 100px;
 	margin:auto;
 	margin-top: 8rem;

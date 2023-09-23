@@ -139,7 +139,7 @@ form {
 }
 
 .footerHidden{
-  transition: all 1.5s;
+  transition: all 2s;
   opacity: 0;
   filter: blur(5px);
   transform: translateY(-50%);
@@ -147,7 +147,7 @@ form {
 
 .footerShow{
   opacity: 1;
-  transition: all 1.5s;
+  transition: all 2s;
 }
 
 

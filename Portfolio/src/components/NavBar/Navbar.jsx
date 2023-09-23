@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <nav className={` navbar ${Visible ? "navShow" : "navHidden"} `} ref={myRef}>
       <div className="desktopMenu">
-        <Link activeClass ="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
-        <Link activeClass ="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">About</Link>
-        <Link activeClass ="active" to="skills" spy={true} smooth={true}  offset={650} duration={500} className="desktopMenuListItem">Portfolio</Link>
+        <Link activeClass ="active" to="intro" smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Home</Link>
+        <Link activeClass ="active" to="skills" smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
+        <Link activeClass ="active" to="project-card" smooth={true} duration={500} className="desktopMenuListItem">Portfolio</Link>
         <Link className="desktopMenuListItem">Resume</Link>
       </div>
 

@@ -3,7 +3,7 @@ import "./intro.scss"
 import { Link } from "react-scroll";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 import { useInView } from "react-intersection-observer"
 
 
@@ -24,7 +24,7 @@ const Intro = () => {
             
             <p className="introPara">I am a skilled and passionate Full Stack Developer with experience in creating <br /> appealing and user-friendly websites</p>
             
-            <Link activeClass ="active" to="contact" smooth={true} offset={100} duration={1500} className='hireMe'><button className="btn"><FontAwesomeIcon icon={faBriefcase} className='btnImg'  /> Hire me</button></Link>
+            <Link activeClass ="active" to="contact" smooth={true} offset={100} duration={1500} className='hireMe'><button className="btn"><FontAwesomeIcon icon={faEnvelopeSquare} className='btnImg'  /> Contact me</button></Link>
         </div>
     </section>
   )
