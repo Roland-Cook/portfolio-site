@@ -91,9 +91,10 @@ $color-purple: #8800ff;
 
 
 .blinkingDot{
+    margin: -10px;
     color: $color-purple;
     animation: animate 
-        1.5s linear infinite;
+        .9s ease-in infinite;
 }
 
 

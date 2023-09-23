@@ -18,7 +18,7 @@ const Projects = () => {
     <div className={` gallery-image ${Visible ? "skillsShow" : "skillsHidden"} `}  ref={myRef}>
          <div id="works">
         <h2 className="worksTitle">My Portfolio</h2>
-        <span className="worksDesc">Welcome to my portfolio a collection of my creative work. Here, you'll find a variety of projects that showcase my skills and dedication.Explore my projects and don't hesitate to contact me with any questions or opportunities </span>
+        <span className="worksDesc">Welcome to my portfolio. Here, you'll find a variety of projects that showcase my skills and dedication. Explore my projects and don't hesitate to contact me with any questions or opportunities </span>
         </div>
 
         <a href="https://gitlab.com/Cook.r/planets" target='__blank'><div className="img-box">

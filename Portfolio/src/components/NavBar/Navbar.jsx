@@ -2,6 +2,7 @@ import useRef, { useState } from 'react'
 import "./Navbar.scss"
 import logo from "../../assets/logo.png"
 import { Link } from "react-scroll";
+import {Link as PathLink} from "react-router-dom"
 import contact from "../../assets/contact.png"
 import menu from "../../assets/menu.png"
 
@@ -16,11 +17,13 @@ const Navbar = () => {
 
   return (
     <nav className={` navbar ${Visible ? "navShow" : "navHidden"} `} ref={myRef}>
+
       <div className="desktopMenu">
         <Link activeClass ="active" to="intro" smooth={true} offset={-50} duration={500} className="desktopMenuListItem">Home</Link>
         <Link activeClass ="active" to="skills" smooth={true} offset={-50} duration={500} className="desktopMenuListItem">About</Link>
         <Link activeClass ="active" to="project-card" smooth={true} duration={500} className="desktopMenuListItem">Portfolio</Link>
-        <Link className="desktopMenuListItem">Resume</Link>
+        <a href='https://docs.google.com/document/d/1YyycaML9nMNpB0QJkRK_j_K9UjraHkLiHxKNK0kGssE/edit' target='__blank' className="desktopMenuListItem">Resume</a>
+    
       </div>
 
     <img src={menu} alt="Menu" className='mobMenu' onClick={()=> setShowMenu(!showMenu)}/>

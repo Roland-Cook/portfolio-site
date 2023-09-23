@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact"
 import Footer from "./components/Footer/footer"
 import SkillDisplay from "./components/SkillDisplay/SkillDisplay"
 
+
 function App() {
 
   return (
